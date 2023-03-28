@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login Authentication User</title>
+	<style>
+		body {
+			background-image: url("https://elev8hr.com.au/wp-content/uploads/2017/11/business-office-wallpapers-hd-images-43.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 100vh;
+			margin: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.login-container {
+			width: 50%;
+			padding: 20px;
+			border: 5px solid rgb(2, 12, 20);
+			border-radius: 10px;
+			background-color: #e3eff1;
+			position: relative;
+		}
+		.title {
+			position: absolute;
+			top: -25px;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: #ddeaec;
+			padding: 0 10px;
+			font-size: 24px;
+			font-weight: bold;
+			color: rgb(4, 7, 23);
+		}
+		h2 {
+			text-align: center;
+			margin: 10px 0;
+			border-bottom: 1px solid #ccc;
+			padding-bottom: 10px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		label {
+			font-weight: bold;
+			margin-bottom: 5px;
+		}
+		input[type="text"],
+		input[type="password"] {
+			padding: 5px;
+			margin-bottom: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+		}
+		button[type="submit"] {
+			background-color: #4CAF50;
+			color: #fff;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		button[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		a {
+			text-align: center;
+			color: rgb(38, 38, 86);
+			margin-top: 10px;
+			text-decoration: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="login-container">
+		<div class="title">Employee Management System</div>
+		<h2>Login Authentication User</h2>
+		<form action="" method="POST">
+			<label for="user_id">User ID</label>
+			<input type="text" id="user_id" name="user_id" required>
+
+			<label for="password">Password</label>
+			<input type="password" id="password" name="password" required>
+
+			<label for="employee_role">Employee Role</label>
+			<select id="employee_role" name="employee_role">
+				<option value="admin">Admin</option>
+				<option value="manager">Manager</option>
+				<option value="assistant_manager">Assistant Manager</option>
+				<option value="employee">Employee</option>
+			</select>
+
+			<button type="submit">Login</button>
+		</form>
+		<a href="C:\Users\Asus\OneDrive\Documents\DTI PROJECT\dti_forgot_password.html">Forgot Password?</a>
+</body>
+</html>
